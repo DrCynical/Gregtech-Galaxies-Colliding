@@ -1,1 +1,1 @@
-# Gregtech-Galaxies-Colliding
+# Gregtech: Galaxies Colliding
