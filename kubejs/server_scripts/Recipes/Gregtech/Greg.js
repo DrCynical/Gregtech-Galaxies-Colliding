@@ -12,6 +12,11 @@ ServerEvents.recipes(event => {
         .itemOutputs('gtceu:firebrick')
         .duration(10)
         .EUt(8);
+    event.recipes.gtceu.assembler('nether_portal_prototype_ass')
+        .itemInputs('2x gtceu:double_steel_plate', '1x gtceu:steel_ring', '2x minecraft:ender_pearl')
+        .itemOutputs('1x kubejs:nether_portal_prototype')
+        .duration(200)
+        .EUt(8)
 
     //LV Machine Casing
     event.remove({ output: 'gtceu:lv_machine_casing' })
