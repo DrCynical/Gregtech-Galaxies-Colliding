@@ -1,0 +1,1055 @@
+{
+	autofocus_id: "4D992C01E12013C8"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "stone_age"
+	group: "635485624DD87F8C"
+	icon: "minecraft:cobblestone"
+	id: "5D5870DB258913AA"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["744480822E3BFDCE"]
+			icon: "minecraft:oak_log"
+			id: "4D992C01E12013C8"
+			rewards: [{
+				id: "53657569969B8F9E"
+				item: "kubejs:ulv_loot_bag"
+				type: "item"
+			}]
+			tasks: [{
+				id: "09E998EBDE33D841"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:logs)"
+					}
+				}
+				title: "Any #minecraft:logs"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4D992C01E12013C8"]
+			id: "37AA8A94CBC9A1EE"
+			tasks: [{
+				count: 8L
+				id: "7B2E928E58789F1E"
+				item: { Count: 8, id: "minecraft:gravel" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["37AA8A94CBC9A1EE"]
+			description: ["Vanilla wood and stone tools have been disabled. You must craft flint tools to move forward."]
+			id: "15CE1BE192E11816"
+			rewards: [{
+				id: "18F946672117C776"
+				item: "kubejs:ulv_loot_bag"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7E801E742E31953B"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["15CE1BE192E11816"]
+			icon: "minecraft:chest"
+			id: "3CE480FE02B6FAFA"
+			tasks: [{
+				id: "56695E665BF7B8E6"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:chests/wooden)"
+					}
+				}
+				title: "Any #forge:chests/wooden"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["15CE1BE192E11816"]
+			id: "6AE2C4C89863F910"
+			rewards: [{
+				id: "043365D6BE90CB03"
+				item: "kubejs:ulv_loot_bag"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4DDB561B65B9F2E6"
+				item: {
+					Count: 1
+					id: "gtceu:flint_pickaxe"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							TorchPlacing: 1b
+						}
+						GT.Tool: {
+							DefaultEnchantments: [ ]
+							HarvestLevel: 1
+							MaxDamage: 63
+							ToolSpeed: 4.0f
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["15CE1BE192E11816"]
+			id: "780878BFB7247BEF"
+			tasks: [{
+				id: "5F0793C0955C7F7B"
+				item: {
+					Count: 1
+					id: "gtceu:flint_axe"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							DisableShields: 1b
+							TreeFelling: 1b
+						}
+						GT.Tool: {
+							DefaultEnchantments: [ ]
+							HarvestLevel: 1
+							MaxDamage: 63
+							ToolSpeed: 2.0f
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["15CE1BE192E11816"]
+			id: "4D79837263946098"
+			tasks: [{
+				id: "22C2321AE05DD1AF"
+				item: {
+					Count: 1
+					id: "gtceu:flint_shovel"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: { }
+						GT.Tool: {
+							DefaultEnchantments: [ ]
+							HarvestLevel: 1
+							MaxDamage: 63
+							ToolSpeed: 4.0f
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["15CE1BE192E11816"]
+			id: "21CE9B8D4C2B501F"
+			tasks: [{
+				id: "27A0320B7F9FBE05"
+				item: {
+					Count: 1
+					id: "gtceu:flint_sword"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: { }
+						GT.Tool: {
+							AttackDamage: 4.0f
+							AttackSpeed: -2.4f
+							DefaultEnchantments: [{
+								id: "minecraft:fire_aspect"
+								lvl: 1s
+							}]
+							MaxDamage: 63
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["21CE9B8D4C2B501F"]
+			id: "041C5BBCECC708F1"
+			tasks: [{
+				entity: "minecraft:sheep"
+				id: "32AF0860B2EFE6FC"
+				type: "kill"
+				value: 6L
+			}]
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["15CE1BE192E11816"]
+			id: "3BC008B21CA075F4"
+			tasks: [
+				{
+					id: "7CC17596CF8EE29B"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:fences/wooden)"
+						}
+					}
+					title: "Any #forge:fences/wooden"
+					type: "item"
+				}
+				{
+					id: "324C00D2F62FCA08"
+					item: {
+						Count: 1
+						id: "gtceu:wood_mallet"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								MaxDamage: 127
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["041C5BBCECC708F1"]
+			icon: "minecraft:white_carpet"
+			id: "69C44DD948AE57AE"
+			tasks: [{
+				count: 3L
+				id: "74FAA15EBCB74B31"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:wool_carpets)"
+					}
+				}
+				title: "Any #minecraft:wool_carpets"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"3BC008B21CA075F4"
+				"69C44DD948AE57AE"
+			]
+			icon: "minecraft:red_bed"
+			id: "0A2A2FF8B30E7192"
+			rewards: [{
+				id: "27D9AF340949A70C"
+				item: "kubejs:ulv_loot_bag"
+				type: "item"
+			}]
+			tasks: [{
+				id: "67FBA90551DE9CBB"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:beds)"
+					}
+				}
+				title: "Any #minecraft:beds"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6AE2C4C89863F910"]
+			id: "05674DFF22488C63"
+			tasks: [{
+				count: 32L
+				id: "6AF827768065D059"
+				item: { Count: 32, id: "minecraft:cobblestone" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["05674DFF22488C63"]
+			id: "287F45405C02A18D"
+			rewards: [{
+				id: "4D841229F18F2F30"
+				item: "kubejs:ulv_loot_bag"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3297EF494409EB03"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["287F45405C02A18D"]
+			id: "73169DCD0C8F36B3"
+			tasks: [{
+				id: "39D30222FE3A4FBB"
+				title: "Food Supply"
+				type: "checkmark"
+			}]
+			x: 10.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4D79837263946098"]
+			id: "5446ED24BC4B96EB"
+			tasks: [{
+				count: 64L
+				id: "724C880D523EFC7D"
+				item: { Count: 64, id: "minecraft:sand" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4D79837263946098"]
+			id: "609E96DAE3C83091"
+			tasks: [{
+				count: 64L
+				id: "7ABE86B35EC98024"
+				item: { Count: 64, id: "minecraft:clay_ball" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"5446ED24BC4B96EB"
+				"609E96DAE3C83091"
+			]
+			icon: "gtceu:compressed_coke_clay"
+			id: "57368C8A164783A8"
+			tasks: [
+				{
+					id: "134C5B29A37A3094"
+					item: "gtceu:brick_wooden_form"
+					type: "item"
+				}
+				{
+					count: 116L
+					id: "441D7E68F5EE3E5F"
+					item: { Count: 116, id: "gtceu:compressed_coke_clay" }
+					type: "item"
+				}
+			]
+			x: 9.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"57368C8A164783A8"
+				"287F45405C02A18D"
+			]
+			icon: "gtceu:coke_oven"
+			id: "7DD3BF8B405D799A"
+			rewards: [{
+				id: "30787190C832AB77"
+				item: "kubejs:ulv_loot_bag"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 25L
+					id: "4DCD0560E4614C0F"
+					item: { Count: 25, id: "gtceu:coke_oven_bricks" }
+					type: "item"
+				}
+				{
+					id: "3EFEFEA512837BC0"
+					item: "gtceu:coke_oven"
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7DD3BF8B405D799A"]
+			id: "36F5BA13EED7E65A"
+			tasks: [{
+				count: 16L
+				id: "4168D0470E019CA9"
+				item: { Count: 16, id: "minecraft:charcoal" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["3CE480FE02B6FAFA"]
+			id: "1A3D0604FAEE519C"
+			tasks: [{
+				id: "1974F1F9BC23A446"
+				title: "Better Storage"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: -3.5d
+		}
+		{
+			id: "5D050087CA7E9689"
+			tasks: [{
+				id: "455FE3C75221A695"
+				title: "Difficult Mobs"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			id: "23DA5543BE3ED7C6"
+			tasks: [{
+				id: "3D8B2E5A37F7D048"
+				title: "Hunger System"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			description: ["[ \"Check out the \", { \"text\": \"Tips Page\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"41BA52E902F54F5F\" } }, \".\" ]"]
+			id: "4FE959CC419E5BCC"
+			tasks: [{
+				id: "7A51A6FFEF856B63"
+				title: "Tips Page"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["287F45405C02A18D"]
+			id: "211EB588D2150BEA"
+			tasks: [
+				{
+					count: 32L
+					id: "026D1DD6B27B2323"
+					item: { Count: 32, id: "minecraft:copper_ingot" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "2256E2636F2DDC34"
+					item: { Count: 16, id: "gtceu:tin_ingot" }
+					type: "item"
+				}
+			]
+			x: 12.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["287F45405C02A18D"]
+			description: ["After crafting a Furnace I recommend making a flint mortar. This allows you to convert gravel to flint at a 1:1 ratio. You will also need mortars to craft bronze going forward."]
+			id: "6F693B40B013D09F"
+			tasks: [{
+				id: "79B34AF8C03FD0F2"
+				item: {
+					Count: 1
+					id: "gtceu:flint_mortar"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: { }
+						GT.Tool: {
+							DefaultEnchantments: [ ]
+							MaxDamage: 63
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: 12.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"211EB588D2150BEA"
+				"6F693B40B013D09F"
+			]
+			id: "30CABC427A59B3C7"
+			tasks: [{
+				count: 16L
+				id: "6F2BAEFD085EE797"
+				item: { Count: 16, id: "gtceu:bronze_dust" }
+				type: "item"
+			}]
+			x: 14.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["30CABC427A59B3C7"]
+			id: "4D9F4BA8161C0F25"
+			rewards: [{
+				count: 2
+				id: "56E1F0007AD19478"
+				item: "kubejs:ulv_loot_bag"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				count: 16L
+				id: "632C4040AA217A87"
+				item: { Count: 16, id: "gtceu:bronze_ingot" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6F693B40B013D09F"]
+			id: "13439A7AF2A6201E"
+			tasks: [{
+				id: "74FBCF1465C50031"
+				title: "Gregtech Tools"
+				type: "checkmark"
+			}]
+			x: 12.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["13439A7AF2A6201E"]
+			icon: {
+				Count: 1
+				id: "gtceu:iron_hammer"
+				tag: {
+					Damage: 0
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+						HarvestLevel: 2
+						MaxDamage: 255
+						ToolSpeed: 6.0f
+					}
+					HideFlags: 2
+				}
+			}
+			id: "3D7DB692E04CE8EE"
+			tasks: [{
+				id: "03807DB44AD439BD"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/hammers)"
+					}
+				}
+				title: "Any #forge:tools/hammers"
+				type: "item"
+			}]
+			x: 12.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["13439A7AF2A6201E"]
+			icon: {
+				Count: 1
+				id: "gtceu:iron_wrench"
+				tag: {
+					Damage: 0
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						Mode: 2b
+					}
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+						HarvestLevel: 2
+						MaxDamage: 255
+						ToolSpeed: 6.0f
+					}
+					HideFlags: 2
+				}
+			}
+			id: "6A1840069CEBD620"
+			tasks: [{
+				id: "08F3CA0887FB530B"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/wrenches)"
+					}
+				}
+				title: "Any #forge:tools/wrenches"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["13439A7AF2A6201E"]
+			icon: {
+				Count: 1
+				id: "gtceu:iron_file"
+				tag: {
+					Damage: 0
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+						MaxDamage: 255
+					}
+					HideFlags: 2
+				}
+			}
+			id: "25770405E8F545F6"
+			tasks: [{
+				id: "028FEDEB29609FA9"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/files)"
+					}
+				}
+				title: "Any #forge:tools/files"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["13439A7AF2A6201E"]
+			icon: {
+				Count: 1
+				id: "gtceu:iron_saw"
+				tag: {
+					Damage: 0
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						HarvestIce: 1b
+					}
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+						MaxDamage: 255
+					}
+					HideFlags: 2
+				}
+			}
+			id: "3487B2F3CE6A1D58"
+			tasks: [{
+				id: "269D6202669D937C"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/saws)"
+					}
+				}
+				title: "Any #forge:tools/saws"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["13439A7AF2A6201E"]
+			icon: {
+				Count: 1
+				id: "gtceu:iron_screwdriver"
+				tag: {
+					Damage: 0
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+						MaxDamage: 255
+					}
+					HideFlags: 2
+				}
+			}
+			id: "4612DCC0AA9F4720"
+			tasks: [{
+				id: "5D18C40B98FD87A1"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/screwdrivers)"
+					}
+				}
+				title: "Any #forge:tools/screwdrivers"
+				type: "item"
+			}]
+			x: 15.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"609E96DAE3C83091"
+				"5446ED24BC4B96EB"
+			]
+			icon: "tconstruct:grout"
+			id: "326D90B621875EAA"
+			tasks: [
+				{
+					count: 16L
+					id: "555D46AC03698B72"
+					item: { Count: 16, id: "kubejs:unfired_seared_brick" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "4D968601BDF6A6AC"
+					item: { Count: 16, id: "tconstruct:grout" }
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["326D90B621875EAA"]
+			icon: "tconstruct:seared_brick"
+			id: "7C8D450EFEF1D52A"
+			tasks: [
+				{
+					count: 16L
+					id: "247B9A1014759AB9"
+					item: { Count: 16, id: "tconstruct:seared_brick" }
+					type: "item"
+				}
+				{
+					count: 18L
+					id: "514A97945163DFDE"
+					item: { Count: 18, id: "tconstruct:seared_bricks" }
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["7C8D450EFEF1D52A"]
+			id: "7C9CAA1F6E69E059"
+			rewards: [{
+				id: "6C4DFF9B56F355DD"
+				item: "kubejs:ulv_loot_bag"
+				type: "item"
+			}]
+			tasks: [{
+				id: "002DDC9FD9A6221F"
+				item: "tconstruct:smeltery_controller"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["7C9CAA1F6E69E059"]
+			id: "379500137FBE6DF4"
+			tasks: [{
+				id: "648BF03F22B968E7"
+				item: "tconstruct:seared_fuel_tank"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["7C9CAA1F6E69E059"]
+			id: "01491C6FDE619BAB"
+			tasks: [{
+				id: "330A894D28AAC21E"
+				item: "tconstruct:seared_faucet"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["7C9CAA1F6E69E059"]
+			id: "22CCDF6BAC502452"
+			tasks: [{
+				id: "284A931D1907FE66"
+				item: "tconstruct:seared_drain"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["7C8D450EFEF1D52A"]
+			id: "50A9E3C787D442CA"
+			tasks: [{
+				id: "66ED343B6047AD65"
+				item: "tconstruct:seared_table"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["628AC36BA4775430"]
+			id: "4FE683820706C91B"
+			tasks: [{
+				id: "571F9B15A38148C4"
+				item: "tconstruct:tinker_station"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["628AC36BA4775430"]
+			description: ["Wood and stone tinker parts have been disabled. You should start with flind tools until you can craft the smeltery."]
+			id: "084CC8267D800711"
+			tasks: [{
+				id: "75B836B85C0BF4A6"
+				item: "tconstruct:part_builder"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["780878BFB7247BEF"]
+			icon: "gtceu:sticky_resin"
+			id: "637AFEB1FC0868ED"
+			tasks: [
+				{
+					id: "4964F8134DC09DDE"
+					item: "gtceu:rubber_log"
+					type: "item"
+				}
+				{
+					id: "198B0CDB1C9740E3"
+					item: "gtceu:sticky_resin"
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["637AFEB1FC0868ED"]
+			id: "628AC36BA4775430"
+			tasks: [{
+				count: 6L
+				id: "7138CA57C3091984"
+				item: "tconstruct:pattern"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3D7DB692E04CE8EE"]
+			description: ["The &1Gregtech Mining Hammer&r allows you to mine 3x1 areas. I recommend using these until you unlock the &eTinker's Anvil&r from Tinker's Construct."]
+			id: "2802FDEF7BD01477"
+			tasks: [{
+				id: "7B09D086A67B8BB5"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/mining_hammers)"
+					}
+				}
+				title: "Any #forge:tools/mining_hammers"
+				type: "item"
+			}]
+			x: 12.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["287F45405C02A18D"]
+			id: "756FB41EAB6154FC"
+			tasks: [{
+				count: 8L
+				id: "5019C3E2D53CE3CB"
+				item: { Count: 8, id: "minecraft:iron_ingot" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["756FB41EAB6154FC"]
+			id: "1DD0A09E7F637411"
+			tasks: [{
+				id: "327C84139F39179C"
+				item: "minecraft:campfire"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1DD0A09E7F637411"]
+			id: "7ECCFC2DF56313C1"
+			rewards: [{
+				id: "5C383E6EF679DC6D"
+				item: "kubejs:ulv_loot_bag"
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "642F97160006D70F"
+				item: { Count: 8, id: "gtceu:wrought_iron_ingot" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["756FB41EAB6154FC"]
+			id: "2C000F8DF3E886FB"
+			tasks: [{
+				id: "0D9743FE9C78CD7A"
+				item: "farmersdelight:stove"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7ECCFC2DF56313C1"]
+			id: "45E5E399A69DD162"
+			tasks: [{
+				id: "7908BAE39AADB154"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["084CC8267D800711"]
+			id: "0C55C8D144B4AB01"
+			rewards: [{
+				id: "13A420441F877E1B"
+				item: "kubejs:ulv_loot_bag"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4574B9C2A1F6CA1D"
+				item: {
+					Count: 1
+					id: "tconstruct:pick_head"
+					tag: {
+						Material: "tconstruct:flint"
+					}
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["084CC8267D800711"]
+			id: "32C95E4F1B342012"
+			rewards: [{
+				id: "2E43BECCEC3F4573"
+				item: "kubejs:ulv_loot_bag"
+				type: "item"
+			}]
+			tasks: [{
+				id: "340A49A3358E3B48"
+				item: {
+					Count: 1
+					id: "tconstruct:small_axe_head"
+					tag: {
+						Material: "tconstruct:flint"
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["084CC8267D800711"]
+			id: "76F5F2D40D11814F"
+			rewards: [{
+				id: "5F52E9E4FA3B64E1"
+				item: "kubejs:ulv_loot_bag"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6999BFFFA522076F"
+				item: {
+					Count: 1
+					id: "tconstruct:small_blade"
+					tag: {
+						Material: "tconstruct:flint"
+					}
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["7ECCFC2DF56313C1"]
+			id: "3CC1D2F0AD4C89AE"
+			tasks: [{
+				id: "6B6C9FF4113144DC"
+				item: "forestry:miner_bag"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["7ECCFC2DF56313C1"]
+			id: "0BB5B53BB2688D86"
+			tasks: [{
+				id: "453FB8759DCC61C4"
+				item: "forestry:digger_bag"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 5.0d
+		}
+	]
+	title: "Stone Age"
+}

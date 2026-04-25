@@ -1,0 +1,20 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "passives"
+	group: ""
+	id: "15CA299C9583927F"
+	order_index: 4
+	quest_links: [ ]
+	quests: [{
+		id: "7F5FDFE4FDE76381"
+		tasks: [{
+			id: "7FB76A476C6BB32B"
+			title: "Passive"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "Passives"
+}

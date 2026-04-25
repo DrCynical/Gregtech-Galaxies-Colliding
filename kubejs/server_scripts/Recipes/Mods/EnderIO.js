@@ -1,0 +1,30 @@
+ServerEvents.recipes(event => {
+    event.remove({mod: 'enderio'})
+    event.recipes.gtceu.assembler('experience_rod_assembly')
+        .itemInputs('gtceu:steel_rod', 'gtceu:exquisite_emerald_gem')
+        .inputFluids('blasmatech:mana')
+        .itemOutputs('enderio:experience_rod')
+        .duration(300)
+        .EUt(16);
+    event.recipes.gtceu.assembler('experience_obelisk_assembly')
+        .itemInputs('enderio:experience_rod', 'gtceu:lv_machine_casing', '3x gtceu:aluminium_plate')
+        .itemOutputs('enderio:xp_obelisk')
+        .duration(600)
+        .EUt(16);
+    event.recipes.gtceu.fluid_solidifier('pulsating_crystal_solidification')
+        .itemInputs('gtceu:exquisite_diamond_gem')
+        .inputFluids('blasmatech:mana')
+        .itemOutputs('enderio:pulsating_crystal')
+        .duration(400)
+        .EUt(16);
+    event.recipes.gtceu.assembler('travel_anchor_assembly')
+        .itemInputs('enderio:pulsating_crystal', 'gtceu:mv_machine_casing', '4x gtceu:stainless_steel_plate')
+        .itemOutputs('enderio:travel_anchor')
+        .duration(600)
+        .EUt(100);
+    event.recipes.gtceu.assembler('staff_travel')
+        .itemInputs('enderio:pulsating_crystal', '#gtceu:circuits/mv', '2x gtceu:stainless_steel_rod')
+        .itemOutputs('enderio:staff_of_travelling')
+        .duration(300)
+        .EUt(100)
+})

@@ -1,0 +1,425 @@
+let yeet = (itemName) => {
+    ServerEvents.recipes(event => {
+        event.remove({output: itemName })
+    })
+    ServerEvents.tags('item', event => {
+        event.add('c:hidden_from_recipe_viewers', itemName)
+    })
+}
+
+yeet('tconstruct:rose_gold_nugget')
+yeet('tconstruct:rose_gold_ingot')
+yeet('tconstruct:rose_gold_block')
+yeet('tconstruct:steel_nugget')
+yeet('tconstruct:steel_ingot')
+yeet('tconstruct:steel_block')
+yeet('tconstruct:cobalt_nugget')
+yeet('tconstruct:cobalt_ingot')
+yeet('tconstruct:cobalt_block')
+yeet('tconstruct:raw_cobalt_block')
+yeet('tconstruct:raw_cobalt')
+yeet('tconstruct:molten_lumium_bucket')
+yeet('tconstruct:molten_signalum_bucket')
+yeet('tconstruct:molten_enderium_bucket')
+yeet('tconstruct:plate_cast')
+yeet('tconstruct:plate_sand_cast')
+yeet('tconstruct:plate_red_sand_cast')
+yeet('tconstruct:gem_cast')
+yeet('tconstruct:gem_sand_cast')
+yeet('tconstruct:gem_red_sand_cast')
+yeet('tconstruct:gear_cast')
+yeet('tconstruct:gear_sand_cast')
+yeet('tconstruct:gear_red_sand_cast')
+yeet('tconstruct:foundry_controller')
+yeet('tconstruct:scorched_drain')
+yeet('tconstruct:scorched_duct')
+yeet('tconstruct:scorched_chute')
+yeet('tconstruct:scorched_alloyer')
+yeet('tconstruct:fantastic_froundry')
+
+//hiding the molten fluids
+let yoot = (fluidName) => {
+	ServerEvents.tags('fluid', event => {
+		event.add('c:hidden_from_recipe_viewers', fluidName)
+	})
+}
+
+yoot('tconstruct:molten_lumium')
+yoot('tconstruct:molten_signalum')
+yoot('tconstruct:molten_enderium')
+
+//removing all tcon recipes for these 3
+//this could probably be used for any future unwanted tcon recipes aswell
+ServerEvents.recipes(event => {
+
+	let tcondumb = [
+		'lumium',
+		'signalum',
+		'enderium'
+	]
+
+	tcondumb.forEach(tcondumb => {
+		//casting
+		event.remove({ id: `tconstruct:smeltery/alloys/molten_${tcondumb}` })
+		event.remove({ id: `tconstruct:smeltery/casting/metal/${tcondumb}/ingot_gold_cast` })
+		event.remove({ id: `tconstruct:smeltery/casting/metal/${tcondumb}/ingot_sand_cast` })
+		event.remove({ id: `tconstruct:smeltery/casting/metal/${tcondumb}/nugget_gold_cast` })
+		event.remove({ id: `tconstruct:smeltery/casting/metal/${tcondumb}/nugget_sand_cast` })
+		event.remove({ id: `tconstruct:smeltery/casting/metal/${tcondumb}/block` })
+		event.remove({ id: `tconstruct:smeltery/casting/metal/${tcondumb}/plate_gold_cast` })
+		event.remove({ id: `tconstruct:smeltery/casting/metal/${tcondumb}/plate_sand_cast` })
+		event.remove({ id: `tconstruct:smeltery/casting/metal/${tcondumb}/gear_gold_cast` })
+		event.remove({ id: `tconstruct:smeltery/casting/metal/${tcondumb}/gear_sand_cast` })
+		//melting
+		event.remove({ id: `tconstruct:smeltery/melting/metal/${tcondumb}/ingot` })
+		event.remove({ id: `tconstruct:smeltery/melting/metal/${tcondumb}/nugget` })
+		event.remove({ id: `tconstruct:smeltery/melting/metal/${tcondumb}/block` })
+		event.remove({ id: `tconstruct:smeltery/melting/metal/${tcondumb}/plate` })
+		event.remove({ id: `tconstruct:smeltery/melting/metal/${tcondumb}/gear` })
+		event.remove({ id: `tconstruct:smeltery/melting/metal/${tcondumb}/dust` })
+
+	})
+})
+
+ServerEvents.tags('item', event => {
+	//ore blocks
+	event.remove('forge:ores/cobalt', 'tconstruct:cobalt_ore') //pretty sure tcon cobalt was removed from generating
+	//raw ores
+	event.remove('forge:raw_materials/cobalt', 'tconstruct:raw_cobalt')
+	//raw ore blocks
+	event.remove('forge:storage_blocks/raw_cobalt', 'tconstruct:raw_cobalt_block')
+	//blocks
+	event.remove('forge:storage_blocks/cobalt', 'tconstruct:cobalt_block')
+	event.remove('forge:storage_blocks/rose_gold', 'tconstruct:rose_gold_block')
+	event.remove('forge:storage_blocks/steel', 'tconstruct:steel_block')
+	//ingots
+	event.remove('forge:ingots/cobalt', 'tconstruct:cobalt_ingot')
+	event.remove('forge:ingots/rose_gold', 'tconstruct:rose_gold_ingot')
+	event.remove('forge:ingots/steel', 'tconstruct:steel_ingot')
+	//nuggets
+	event.remove('forge:nuggets/cobalt', 'tconstruct:cobalt_nugget')
+	event.remove('forge:nuggets/rose_gold', 'tconstruct:rose_gold_nugget')
+	event.remove('forge:nuggets/steel', 'tconstruct:steel_nugget')
+})
+
+
+ServerEvents.recipes(event => {
+
+	event.remove({ type: 'tconstruct:foundry' })
+
+	event.remove({ input: 'tconstruct:plate_cast' })
+	event.remove({ input: 'tconstruct:plate_sand_cast' })
+	event.remove({ input: 'tconstruct:plate_red_sand_cast' })
+	event.remove({ input: 'tconstruct:gear_cast' })
+	event.remove({ input: 'tconstruct:gear_sand_cast' })
+	event.remove({ input: 'tconstruct:gear_red_sand_cast' })
+	event.remove({ input: 'tcintegrations:molten_manasteel'})
+
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/aluminum/ore_sparse' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/aluminum/raw' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/aluminum/raw_block' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/copper/geore/bud_large' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/copper/geore/bud_medium' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/copper/geore/bud_small' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/copper/geore/cluster' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/copper/ore_sparse' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/gold/geore/bud_large' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/gold/geore/bud_medium' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/gold/geore/bud_small' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/gold/geore/cluster' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/gold/ore_dense' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/iron/geore/bud_large' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/iron/geore/bud_medium' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/iron/geore/bud_small' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/iron/geore/cluster' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/iron/ore_dense' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/iron/ore_sparse' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/lead/ore_dense' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/lead/ore_sparse' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/nickel/ore_dense' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/nickel/ore_sparse' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/osmium/ore_dense' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/osmium/ore_singular' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/osmium/ore_sparse' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/osmium/raw' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/osmium/raw_block' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/platinum/ore_dense' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/platinum/ore_sparse' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/silver/ore_dense' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/silver/ore_sparse' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/tin/ore_dense' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/tin/ore_sparse' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/tungsten/ore_dense' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/tungsten/ore_singular' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/tungsten/ore_sparse' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/tungsten/raw' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/tungsten/raw_block' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/uranium/ore_dense' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/uranium/ore_sparse' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/zinc/geore/bud_large' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/zinc/geore/bud_medium' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/zinc/geore/bud_small' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/zinc/geore/cluster' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/zinc/ore_dense' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/zinc/ore_sparse' })
+	event.remove({ id: 'tconstruct:smeltery/melting/quartz/geore/bud_large' })
+	event.remove({ id: 'tconstruct:smeltery/melting/quartz/geore/bud_medium' })
+	event.remove({ id: 'tconstruct:smeltery/melting/quartz/geore/bud_small' })
+	event.remove({ id: 'tconstruct:smeltery/melting/quartz/geore/cluster' })
+	event.remove({ id: 'tconstruct:smeltery/melting/quartz/ore_dense' })
+	event.remove({ id: 'tconstruct:smeltery/melting/quartz/ore_sparse' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/aluminum/ore_dense' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/aluminum/ore_dense' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/aluminum/ore_singular' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/netherite/lodestone' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/osmium/dust' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/rose_gold/dust' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/rose_gold/silky_cloth' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/tungsten/dust' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/diamond/jukebox' })
+	event.remove({ id: 'tconstruct:smeltery/melting/diamond/jukebox' })
+	event.remove({ id: 'tconstruct:smeltery/melting/amethyst/spyglass' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/gold/bell' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/gold/clock' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/iron/chain' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/iron/chain_boots' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/iron/chain_chestplate' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/iron/chain_leggings' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/iron/chain_helmet' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/iron/crossbow' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/iron/ingot_4' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/iron/ingot_5' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/iron/nugget_3' })
+	event.remove({ id: 'tconstruct:smeltery/melting/quartz/gem_1' })
+	event.remove({ id: 'tconstruct:smeltery/melting/glass/sand_cast' })
+	event.remove({ id: 'gm_construct:smeltery/casting/metal/malachite/block' })
+	event.remove({ id: 'tconstruct:smeltery/casting/ender/eye' })
+	event.remove({ id: 'tconstruct:smeltery/casting/metal/gold/clock' })
+	event.remove({ id: 'tconstruct:smeltery/casting/metal/iron/compass' })
+	event.remove({ id: 'tconstruct:smeltery/seared/seared_brick' })
+	event.remove({ id: 'tconstruct:smeltery/seared/seared_brick_kiln' })
+	event.remove({ id: 'tconstruct:smeltery/melting/metal/molten_debris/ore' })
+	event.remove({ id: 'tconstruct:smeltery/alloys/molten_rose_gold' })
+	event.remove({ id: 'tconstruct:smeltery/alloys/molten_netherite' })
+	event.remove({ id: 'tconstruct:common/glass/vanilla/daylight_detector' })
+	event.remove({ id: 'tconstruct:common/basalt_blast_furnace' })
+	event.remove({ id: 'tconstruct:common/flint' })
+	event.remove({ id: 'tconstruct:common/glass/vanilla/glass_bottle' })
+})
+
+ServerEvents.recipes(event => {
+    event.remove({input: 'tconstruct:grout', output: 'tconstruct:seared_brick'})
+    event.shaped('8x kubejs:unfired_seared_brick', [
+        'SSS',
+        'SMS',
+        'SSS'
+    ], {
+        S: 'tconstruct:grout',
+        M: 'gtceu:brick_wooden_form'
+    }
+    ).keepIngredient('gtceu:brick_wooden_form')
+
+    event.smelting('tconstruct:seared_brick', 'kubejs:unfired_seared_brick')
+
+    //tcon pattern
+	event.remove({ id: 'tconstruct:tables/pattern' })
+	event.shaped('6x tconstruct:pattern', [
+		'ABA',
+		'BCB',
+		'ABA'
+	], {
+		A: '#forge:rods/wooden',
+		B: '#minecraft:planks',
+		C: 'gtceu:sticky_resin'
+	}).id('doctors:tconstruct_pattern')
+
+    event.remove({ output: 'tconstruct:silky_cloth' })
+	/*event.recipes.gtceu.assembler('doctors:silky_cloth')
+		.itemInputs(['4x projectred_core:woven_cloth', 'create:polished_rose_quartz'])
+		.itemOutputs('tconstruct:silky_cloth')
+		.duration(100)
+		.EUt(GTValues.VA[GTValues.LV])
+    */ //find recipe
+	event.remove({ output: 'tconstruct:seared_drain' })
+	event.shaped('tconstruct:seared_drain', [
+		'BHB',
+		'CCC',
+		'B B'
+	], {
+		H: '#forge:tools/hammers',
+		C: 'gtceu:copper_plate',
+		B: 'tconstruct:seared_brick'
+	}).id('doctors:seared_drain')
+
+	event.remove({ output: 'tconstruct:seared_duct' })
+	event.shaped('tconstruct:seared_duct', [
+		'BHB',
+		'CCC',
+		'B B'
+	], {
+		H: '#forge:tools/hammers',
+		C: 'gtceu:gold_plate',
+		B: 'tconstruct:seared_brick'
+	}).id('doctors:seared_duct')
+
+	event.remove({ output: 'tconstruct:seared_chute' })
+	event.shaped('tconstruct:seared_chute', [
+		'BCB',
+		'HC ',
+		'BCB'
+	], {
+		H: '#forge:tools/hammers',
+		C: 'gtceu:copper_plate',
+		B: 'tconstruct:seared_brick'
+	}).id('doctors:seared_chute')
+
+    //making ticon cast correct blocks
+	event.remove({ id: 'tconstruct:smeltery/casting/metal/brass/block' })
+	event.custom({
+		"type": "tconstruct:casting_basin",
+		"cooling_time": 161,
+		"fluid": {
+			"amount": 1296,
+			"fluid": "gtceu:brass"
+		},
+		"result": {
+			"item": "gtceu:brass_block"
+		}
+	}).id("doctors:smeltery_brass_block_casting")
+	event.remove({ id: 'tconstruct:smeltery/casting/metal/steel/block' })
+	event.custom({
+		"type": "tconstruct:casting_basin",
+		"cooling_time": 194,
+		"fluid": {
+			"amount": 1296,
+			"fluid": "gtceu:steel"
+		},
+		"result": {
+			"item": "gtceu:steel_block"
+		}
+	}).id("doctors:smeltery_steel_block_casting")
+	event.remove({ id: 'tconstruct:smeltery/casting/metal/zinc/block' })
+	event.custom({
+		"type": "tconstruct:casting_basin",
+		"cooling_time": 141,
+		"fluid": {
+			"amount": 1296,
+			"fluid": "gtceu:zinc"
+		},
+		"result": {
+			"item": "gtceu:zinc_block"
+		}
+	}).id("doctors:smeltery_zinc_block_casting")
+	event.remove({ id: 'gm_construct:smeltery/casting/metal/malachite/block' })
+	event.custom({
+		"type": "tconstruct:casting_basin",
+		"cooling_time": 121,
+		"fluid": {
+			"amount": 1296,
+			"fluid": "gtceu:copper"
+		},
+		"result": {
+			"item": "gtceu:copper_block"
+		}
+	}).id("doctors:smeltery_copper_block_casting")
+
+    //slimy crystals
+
+	let TCslime = [
+		'earth',
+		'sky',
+		'ichor',
+		'ender'
+	]
+
+	TCslime.forEach(TCslime => {
+
+		event.remove({ id: `tconstruct:common/slime/${TCslime}/crystal_block` })
+		event.recipes.gtceu.forge_hammer(`doctors:${TCslime}_slime_crystal_hammer`)
+			.itemInputs(`tconstruct:${TCslime}_slime_crystal_block`)
+			.itemOutputs(`4x tconstruct:${TCslime}_slime_crystal`)
+			.duration(100)
+			.EUt(24);
+		event.recipes.gtceu.compressor(`doctors:${TCslime}_slime_crystal_compress`)
+			.itemInputs(`4x tconstruct:${TCslime}_slime_crystal`)
+			.itemOutputs(`tconstruct:${TCslime}_slime_crystal_block`)
+			.duration(300)
+			.EUt(2);
+	})
+	event.remove({ output: 'tconstruct:smeltery_controller' })
+	event.shaped('tconstruct:smeltery_controller', [
+		'BPB',
+		'HSW',
+		'BPB'
+	], {
+		B: 'tconstruct:seared_bricks',
+		H: '#forge:tools/hammers',
+		S: 'gtceu:copper_spring',
+		W: '#forge:tools/wrenches',
+		P: 'gtceu:copper_plate'
+	}).id('doctors:smeltery_controller')
+
+	event.remove({ output: 'tconstruct:crafting_station' })
+	event.shaped('tconstruct:crafting_station', [
+		'PPP',
+		'SCM',
+		'F F'
+	], {
+		P: 'tconstruct:pattern',
+		S: '#forge:tools/saws',
+		M: '#forge:tools/mallets',
+		C: 'minecraft:crafting_table',
+		F: '#forge:fences'
+	}).id('doctors:crafting_station')
+
+	event.remove({ output: 'tconstruct:part_builder' })
+	event.shaped('tconstruct:part_builder', [
+		'PPP',
+		'FSF',
+		'FMF'
+	], {
+		P: 'tconstruct:pattern',
+		S: '#forge:tools/saws',
+		M: '#forge:tools/mallets',
+		F: '#forge:fences'
+	}).id('doctors:part_builder')
+
+	event.remove({ output: 'tconstruct:tinker_station' })
+	event.shaped('tconstruct:tinker_station', [
+		'PPP',
+		'FIF',
+		'FMF'
+	], {
+		P: 'tconstruct:pattern',
+		M: '#forge:tools/mallets',
+		F: '#forge:fences',
+		I: 'gtceu:double_iron_plate'
+	}).id('doctors:tinker_station')
+
+	event.replaceInput({id: 'tconstruct:smeltery/seared/fuel_tank'}, '#forge:glass', 'gtceu:bronze_drum')
+	event.remove({ output: 'tconstruct:tinkers_anvil'})
+	const steel_anvil = {
+                        "type": "forge:nbt",
+                        "item": "tconstruct:tinkers_anvil",
+                        "count": 1,
+                        "nbt": "{texture:\"tconstruct:steel_block\"}"
+                        }
+	event.shaped(
+                Item.of(steel_anvil, 1), // arg 1: output
+                [
+                    'AAA',
+                    'CDC', // arg 2: the shape (array of strings)
+                    'C C'
+                ],
+                {
+                    A:{
+                        "type": "forge:nbt",
+                        "item": "tconstruct:large_plate",
+                        "count": 1,
+                        "nbt": "{Material:\"tconstruct:steel\"}"
+                    },
+                    C: 'tconstruct:seared_bricks',
+                    D: 'minecraft:anvil'
+                }
+    );
+})

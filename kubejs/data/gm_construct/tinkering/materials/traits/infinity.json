@@ -1,0 +1,11 @@
+{
+    "default": [
+        {
+            "name": "tconstruct:unbreakable",
+            "level": 1
+        },
+        { "name": "tconstruct:insatiable", "level": 5 },
+        { "name": "tconstruct:sharpness", "level": 10 },
+        { "name": "tconstruct:lightspeed", "level": 1 }
+    ]
+}

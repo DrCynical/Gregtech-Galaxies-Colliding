@@ -1,0 +1,26 @@
+StartupEvents.registry('block', event => {
+    event.create('high_steam_machine_casing')
+		.hardness(5)
+		.resistance(1)
+		.soundType('stone')
+		.requiresTool(true)
+		.tagBlock("mineable/pickaxe")
+		.tagBlock('minecraft:needs_iron_tool')
+		.textureAll('kubejs:block/high_steam_machine_casing');
+	event.create('mana_casing')
+		.hardness(5)
+		.resistance(1)
+		.soundType('stone')
+		.requiresTool(true)
+		.tagBlock("mineable/pickaxe")
+		.tagBlock('minecraft:needs_iron_tool')
+		.textureAll('kubejs:block/mana_casing');
+	event.create('solar_sheet_block')
+		.hardness(5)
+		.resistance(1)
+		.soundType('glass')
+		.requiresTool(true)
+		.tagBlock("mineable/pickaxe")
+		.tagBlock('minecraft:needs_iron_tool')
+		.textureAll('kubejs:block/solar_sheet_block');
+})

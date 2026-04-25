@@ -1,0 +1,1120 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "lv_age"
+	group: "635485624DD87F8C"
+	icon: "gtceu:lv_machine_hull"
+	id: "02D79B1320B6738E"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["28B70A2C9BDD7AED"]
+			id: "6A8B7C609EA63454"
+			rewards: [{
+				id: "7862C3E36FEC276D"
+				item: "kubejs:lv_loot_bag"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "72E4863550076470"
+				item: "gtceu:lv_machine_hull"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6A8B7C609EA63454"]
+			id: "4A52195023EAAFBF"
+			tasks: [{
+				count: 4L
+				id: "05C3105E26517A00"
+				item: { Count: 4, id: "gtceu:lv_electric_motor" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4A52195023EAAFBF"]
+			id: "1795F9C1ECEDE37E"
+			rewards: [{
+				id: "384CCCD970CF57B7"
+				item: "kubejs:lv_loot_bag"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "38AF92EC00369E2C"
+				item: "gtceu:lv_wiremill"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1795F9C1ECEDE37E"]
+			id: "34BBA3237C49BFCE"
+			tasks: [{
+				id: "6F52E99DB42347C8"
+				item: "gtceu:lv_electric_piston"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["34BBA3237C49BFCE"]
+			id: "2500EDBA4BF1571C"
+			tasks: [{
+				id: "36785713B26C2F0E"
+				item: "gtceu:lv_bender"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["34BBA3237C49BFCE"]
+			id: "5F61CA236DCAFA47"
+			tasks: [{
+				id: "669830F39B15D26A"
+				item: "gtceu:lv_lathe"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["34BBA3237C49BFCE"]
+			id: "2990EB4BC8CA9068"
+			tasks: [{
+				id: "211A3A3D24078518"
+				item: "gtceu:lv_macerator"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["34BBA3237C49BFCE"]
+			id: "12A7644EF0273197"
+			tasks: [{
+				count: 2L
+				id: "4A67B14404B6CF5D"
+				item: { Count: 2, id: "gtceu:lv_robot_arm" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4A52195023EAAFBF"]
+			id: "6CE73073F8659246"
+			tasks: [{
+				id: "7E4C656C65B511A8"
+				item: "gtceu:lv_conveyor_module"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"12A7644EF0273197"
+				"6CE73073F8659246"
+			]
+			id: "1832DE4E790AD692"
+			rewards: [{
+				count: 2
+				id: "7282FC43A23363FE"
+				item: "kubejs:lv_loot_bag"
+				type: "item"
+			}]
+			tasks: [{
+				id: "64C23806A893BAC7"
+				item: "gtceu:lv_assembler"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4A52195023EAAFBF"]
+			id: "328B4C8B1642F9F6"
+			tasks: [{
+				id: "12BDCB4002453896"
+				item: "gtceu:lv_centrifuge"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4A52195023EAAFBF"]
+			id: "771FC5A1869C07C8"
+			tasks: [{
+				id: "241E541198E60CF8"
+				item: "gtceu:lv_electric_pump"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4A52195023EAAFBF"]
+			hide_dependency_lines: true
+			id: "695083D742E76EFE"
+			tasks: [{
+				id: "0E54EE99BA2F5713"
+				item: "gtceu:lv_chemical_reactor"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["771FC5A1869C07C8"]
+			id: "2A03FCF6842DF7DA"
+			tasks: [{
+				id: "1C7B5AE7CFF1EC14"
+				item: "gtceu:lv_extractor"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["771FC5A1869C07C8"]
+			id: "607FD11A82CB0B23"
+			tasks: [{
+				id: "1A8C1AEE9B010D4A"
+				item: "gtceu:lv_fluid_solidifier"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1832DE4E790AD692"]
+			id: "0BEF75725077E376"
+			tasks: [{
+				count: 16L
+				id: "49169B26E9FF7CCC"
+				item: { Count: 16, id: "gtceu:cupronickel_coil_block" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0BEF75725077E376"]
+			id: "3738342CEA4BFE5A"
+			tasks: [{
+				count: 2L
+				id: "38EF2F334E2A95A1"
+				item: { Count: 2, id: "gtceu:lv_energy_input_hatch" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3738342CEA4BFE5A"]
+			id: "5F9183C9D58E52F2"
+			rewards: [{
+				id: "36FC5E9E41B6A206"
+				item: "kubejs:lv_loot_bag"
+				type: "item"
+			}]
+			tasks: [{
+				id: "53DDA62834258D6B"
+				item: "gtceu:electric_blast_furnace"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6A8B7C609EA63454"]
+			id: "31F975FD0AB16469"
+			tasks: [{
+				id: "0C4185A761DC328E"
+				item: "gtceu:lv_electrolyzer"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6A8B7C609EA63454"]
+			id: "147962F19BD33B1F"
+			tasks: [{
+				id: "2F80D560C9050DCA"
+				item: "gtceu:lv_alloy_smelter"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["147962F19BD33B1F"]
+			description: ["[ \"Ambrosalloy is used to make the LV Superconductor. If you don't know what a superconductor is, Check out the \", { \"text\": \"Tips Page\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"2362662AB695FE15\" } }, \".\" ]"]
+			icon: "gtceu:ambrosalloy_ingot"
+			id: "1A1931FCAA52C0AE"
+			rewards: [{
+				id: "1E12BD465EDE0DFA"
+				item: "kubejs:lv_loot_bag"
+				type: "item"
+			}]
+			subtitle: "LV Superconductor"
+			tasks: [
+				{
+					count: 8L
+					id: "00AFA5D00A324ADB"
+					item: { Count: 8, id: "gtceu:ambrosalloy_ingot" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "569179BC6AF6B4A7"
+					item: { Count: 4, id: "gtceu:ambrosalloy_single_wire" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"49C75F2EF4FEB377"
+				"5F9183C9D58E52F2"
+			]
+			id: "25C1190BB05E1E6A"
+			tasks: [{
+				count: 32L
+				id: "4212DD77CDB7502C"
+				item: { Count: 32, id: "gtceu:aluminium_ingot" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -3.0d
+		}
+		{
+			id: "49C75F2EF4FEB377"
+			tasks: [
+				{
+					count: 16L
+					id: "3E8EA8A728F15EEE"
+					item: { Count: 16, id: "gtceu:sapphire_dust" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "68B538A04E91AE59"
+					item: { Count: 16, id: "gtceu:green_sapphire_dust" }
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["03BC0CBDAA3B64F6"]
+			id: "77E05DEE4BE00A6F"
+			rewards: [{
+				id: "4BACBBA20E242248"
+				item: "kubejs:mv_loot_bag"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "108D7F1F82DECF82"
+				item: "gtceu:mv_machine_casing"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["25C1190BB05E1E6A"]
+			id: "03BC0CBDAA3B64F6"
+			tasks: [{
+				count: 16L
+				id: "0D6880FCEC4A0582"
+				item: { Count: 16, id: "gtceu:manalium_ingot" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["31F975FD0AB16469"]
+			id: "35C441D264DE302F"
+			tasks: [{
+				id: "1A21928C8615142A"
+				item: "gtceu:sphalerite_dust"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["328B4C8B1642F9F6"]
+			id: "09E0EC169BA1135D"
+			tasks: [{
+				id: "3097647DEF29532A"
+				item: "gtceu:realgar_dust"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["35C441D264DE302F"]
+			hide_dependent_lines: true
+			id: "481550B06045C2A5"
+			tasks: [{
+				id: "45EF7F6C5623E3BE"
+				item: "gtceu:gallium_dust"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["09E0EC169BA1135D"]
+			hide_dependent_lines: true
+			id: "1E20147F5FD7A700"
+			tasks: [{
+				id: "1E8532B2DF917105"
+				item: "gtceu:arsenic_dust"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6A8B7C609EA63454"]
+			id: "18FDBD75AF58CE58"
+			tasks: [{
+				id: "60C62E1969687977"
+				item: "gtceu:lv_mixer"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"18FDBD75AF58CE58"
+				"481550B06045C2A5"
+				"1E20147F5FD7A700"
+			]
+			id: "25772E94FD1FAE6E"
+			tasks: [{
+				id: "119EEDD0905FC614"
+				item: "gtceu:gallium_arsenide_dust"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["25772E94FD1FAE6E"]
+			id: "344EBFA86A71D45E"
+			tasks: [{
+				count: 4L
+				id: "2102EB7F243AD6A5"
+				item: "gtceu:diode"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1832DE4E790AD692"]
+			id: "5FADE6D6AB7FD6B2"
+			tasks: [{
+				count: 2L
+				id: "1A1BED53B5AFF519"
+				item: { Count: 3, id: "gtceu:phenolic_circuit_board" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"5FADE6D6AB7FD6B2"
+				"2A5AA17E4F89081B"
+			]
+			id: "3C4B7246BEE4F2E7"
+			tasks: [{
+				count: 2L
+				id: "39481E779A6E6930"
+				item: "gtceu:phenolic_printed_circuit_board"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"3C4B7246BEE4F2E7"
+				"344EBFA86A71D45E"
+			]
+			icon: "gtceu:good_electronic_circuit"
+			id: "359BDCC2B410CAFC"
+			rewards: [{
+				count: 2
+				id: "79D853A16BE96BF5"
+				item: "kubejs:lv_loot_bag"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				count: 2L
+				id: "3688C8A477E2FA5C"
+				item: { Count: 3, id: "gtceu:good_electronic_circuit" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["359BDCC2B410CAFC"]
+			description: ["I recommend using your first MV Circuits to make a Circuit Assembler. This allows you to make LV and MV circuits cheaper."]
+			id: "2120D9796F5E4319"
+			rewards: [{
+				id: "5D8669621841F169"
+				item: "kubejs:lv_loot_bag"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4F03BEF3FF3CDFD5"
+				item: "gtceu:lv_circuit_assembler"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["611A865C083E726D"]
+			description: ["&eElectrolyze&r your &fSodium Bisulfate Dust&r and you get &9Sodium Persulfate&r and some left over Hydrogen."]
+			id: "2A5AA17E4F89081B"
+			tasks: [{
+				id: "245D0531326D3860"
+				item: "gtceu:sodium_persulfate_bucket"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["11F23F79BFF1CFCA"]
+			description: ["Chemically reacting &6Sulfuric Acid&r with Salt gets you Sodium Bisulfate dust."]
+			id: "611A865C083E726D"
+			tasks: [{
+				count: 7L
+				id: "71F699AF1DC8E73E"
+				item: { Count: 14, id: "gtceu:sodium_bisulfate_dust" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2E190573F4BDD89B"]
+			description: ["Adding water to your &9Sulfur Trioxide&r inside another &eChemical Reactor&r will grant you &6Sulfuric Acid&r. Passiving this is recommended as it is used all over the place"]
+			id: "11F23F79BFF1CFCA"
+			tasks: [{
+				id: "0CB67C36F98FE90B"
+				item: "gtceu:sulfuric_acid_bucket"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7C7E2983C82A7AF4"]
+			description: ["You will need to combine &3Oxygen&r and &bSulfur Dioxide&r inside a &eChemical Reactor&r to make &9Sulfur Trioxide&r."]
+			id: "2E190573F4BDD89B"
+			tasks: [{
+				id: "6FFBD67DD5458B91"
+				item: "gtceu:sulfur_trioxide_bucket"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["695083D742E76EFE"]
+			description: ["[ \"Sulfur Dioxide is made inside a Chemical Reactor using Oxygen and Sulfur Dust. Oxygen can be made plenty of ways, I recommend setting up a passive way as soon as possible. \", { \"text\": \"See Passives Page.\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"7F5FDFE4FDE76381\" } } ]"]
+			id: "7C7E2983C82A7AF4"
+			tasks: [{
+				id: "603F9A63AA5BDED3"
+				item: "gtceu:sulfur_dioxide_bucket"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6A8B7C609EA63454"]
+			id: "66743145BC793753"
+			tasks: [{
+				id: "578764B157B5D639"
+				item: "gtceu:lv_steam_turbine"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["66743145BC793753"]
+			description: ["Can use solid or fluid fuels. Will generate 800 mb/t of Steam. As long as you are supplying enough water to this boiler you won't need to upgrade your steam infrastructure for a while. I recommend using creosote to power this. &4WARNING!! WILL EXPLODE IF NOT ENOUGH WATER IS SUPPLIED&r"]
+			icon: "gtceu:bronze_large_boiler"
+			id: "69822A950A1C790E"
+			rewards: [{
+				id: "622943E8E091F85B"
+				item: "kubejs:lv_loot_bag"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7A63C7171DA50F17"
+					item: "gtceu:bronze_large_boiler"
+					type: "item"
+				}
+				{
+					count: 23L
+					id: "7B00C0BE2CC49FFA"
+					item: { Count: 23, id: "gtceu:steam_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "75BE225588B399C5"
+					item: { Count: 2, id: "gtceu:bronze_pipe_casing" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "5990071DFCE412CB"
+					item: { Count: 5, id: "gtceu:bronze_firebox_casing" }
+					type: "item"
+				}
+				{
+					id: "1FA61456A2EBFB79"
+					item: "gtceu:maintenance_hatch"
+					type: "item"
+				}
+				{
+					id: "25852AC028ED7C79"
+					item: "gtceu:lv_muffler_hatch"
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["66743145BC793753"]
+			description: ["Worse than the Large Bronze Boiler, but doesn't require any fuel meaning free steam. Will generate 125 mb/t as long as its daytime. "]
+			icon: "gtceu:large_solar_boiler"
+			id: "01557F409082EADE"
+			rewards: [{
+				id: "10F7301B9C3B72C8"
+				item: "kubejs:lv_loot_bag"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0032907323BDCDB3"
+					item: "gtceu:large_solar_boiler"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "20AB637FA0AA617B"
+					item: { Count: 9, id: "kubejs:solar_sheet_block" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "544F513F346FCB29"
+					item: { Count: 9, id: "gtceu:bronze_firebox_casing" }
+					type: "item"
+				}
+				{
+					id: "70463A455E5985A4"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:ulv_input_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:lv_input_hatch"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1992F46031703AC1"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:ulv_output_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:lv_output_hatch"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 28L
+					id: "07398390228D78FA"
+					item: { Count: 28, id: "gtceu:steam_machine_casing" }
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["359BDCC2B410CAFC"]
+			description: ["Acts as a mana pool with 4x parallels. This means it will try to run 4 recipes at once at a discounted duration."]
+			icon: "gtceu:mana_matic"
+			id: "6E2303B1B2CF3D1D"
+			rewards: [{
+				id: "2D8E2992E5370AA4"
+				item: "kubejs:lv_loot_bag"
+				type: "item"
+			}]
+			subtitle: "Large Mana Pool"
+			tasks: [
+				{
+					id: "7B004D089B197634"
+					item: "gtceu:mana_matic"
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "65D05E5DA37EEC87"
+					item: { Count: 19, id: "kubejs:mana_casing" }
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "4E09C291920493E3"
+					item: { Count: 12, id: "gtceu:manasteel_frame" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "1ACCA408E31F548F"
+					item: { Count: 9, id: "botania:livingrock" }
+					type: "item"
+				}
+				{
+					id: "7F4D3687A46782D3"
+					item: "gtceu:lv_input_bus"
+					type: "item"
+				}
+				{
+					id: "2A9FE44343B32DB2"
+					item: "gtceu:lv_output_bus"
+					type: "item"
+				}
+				{
+					id: "460803CFAE3EB5A5"
+					item: "gtceu:lv_input_hatch"
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["359BDCC2B410CAFC"]
+			description: ["Requires Botania Generating Flowers to produce mana. Each flower requires its standard fuel. (Ex. Endoflame takes coal or charcoal)"]
+			icon: "gtceu:mana_convergence_chamber"
+			id: "151D2CA0AF262F73"
+			rewards: [{
+				id: "5CD18D89312779E0"
+				item: "kubejs:lv_loot_bag"
+				type: "item"
+			}]
+			subtitle: "Large Mana Flower"
+			tasks: [
+				{
+					id: "23D615F3EA13E501"
+					item: "gtceu:mana_convergence_chamber"
+					type: "item"
+				}
+				{
+					count: 37L
+					id: "471D861D8601CB86"
+					item: { Count: 37, id: "kubejs:mana_casing" }
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "1BDA2CB21A3839A7"
+					item: { Count: 20, id: "gtceu:manasteel_frame" }
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "0A741C60BEF9BDDF"
+					item: { Count: 24, id: "botania:mana_glass" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "24EAC791599CC053"
+					item: {
+						Count: 3
+						id: "gtceu:blue_borderless_lamp"
+						tag: {
+							bloom: 1b
+							inverted: 1b
+							lit: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1B475168D427A930"
+					item: "gtceu:lv_input_bus"
+					type: "item"
+				}
+				{
+					id: "1291BAD9F046DAE6"
+					item: "gtceu:lv_output_bus"
+					type: "item"
+				}
+				{
+					id: "349444B0B2CF99B7"
+					item: "gtceu:lv_input_hatch"
+					type: "item"
+				}
+				{
+					id: "197D2E3760FE0703"
+					item: "gtceu:lv_output_hatch"
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1832DE4E790AD692"]
+			id: "50FDB6DA7B654CEB"
+			tasks: [{
+				dimension: "aether:the_aether"
+				id: "1CD0AA82B80C2615"
+				type: "dimension"
+			}]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["50FDB6DA7B654CEB"]
+			id: "2F34E943B6139E6C"
+			tasks: [
+				{
+					id: "78A15C83B8501D9A"
+					item: "gtceu:raw_nickel"
+					type: "item"
+				}
+				{
+					id: "01BEA4859942DAD4"
+					item: "gtceu:raw_garnierite"
+					type: "item"
+				}
+				{
+					id: "6C28C0C5CB01BF04"
+					item: "gtceu:raw_pentlandite"
+					type: "item"
+				}
+				{
+					id: "26984A86C81C274D"
+					item: "gtceu:raw_cobaltite"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["50FDB6DA7B654CEB"]
+			id: "12F8F9DEE6E3C857"
+			tasks: [
+				{
+					id: "23DDF439F2E04160"
+					item: "gtceu:raw_zanite"
+					type: "item"
+				}
+				{
+					id: "6530373A07822286"
+					item: "gtceu:raw_malachite"
+					type: "item"
+				}
+				{
+					id: "76699877FACCC8EB"
+					item: "minecraft:raw_copper"
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["50FDB6DA7B654CEB"]
+			id: "282E4B8BBF4B5626"
+			tasks: [
+				{
+					id: "46BF31A36A455EA2"
+					item: "gtceu:raw_ambrosium"
+					type: "item"
+				}
+				{
+					id: "444A6F53A0EF9C05"
+					item: "gtceu:raw_diamond"
+					type: "item"
+				}
+				{
+					id: "559B5B68FCC66E0E"
+					item: "gtceu:raw_grossular"
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2F34E943B6139E6C"]
+			id: "78D0F57C90DDF5CA"
+			tasks: [{
+				count: 9L
+				id: "2C5166A723E1E108"
+				item: { Count: 14, id: "gtceu:cobalt_brass_dust" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["78D0F57C90DDF5CA"]
+			id: "21B45FF4FF222022"
+			tasks: [{
+				id: "03169CA58F1B8957"
+				item: "gtceu:lv_cutter"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["359BDCC2B410CAFC"]
+			id: "0BCF9C0B088DF0C0"
+			rewards: [{
+				id: "15621972559E05E0"
+				item: "kubejs:lv_loot_bag"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7342CBE0197A2A7A"
+					item: "gtceu:photosynthesis_array"
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "695EDBBE88BF7DDF"
+					item: { Count: 20, id: "gtceu:steel_frame" }
+					type: "item"
+				}
+				{
+					count: 30L
+					id: "09FFD67A011BCF41"
+					item: { Count: 30, id: "gtceu:solid_machine_casing" }
+					type: "item"
+				}
+				{
+					id: "2A4AD98091376983"
+					item: "gtceu:lv_input_bus"
+					type: "item"
+				}
+				{
+					id: "13D725C0586F4F12"
+					item: "gtceu:lv_input_hatch"
+					type: "item"
+				}
+				{
+					id: "7626DE3221C9299F"
+					item: "gtceu:lv_output_bus"
+					type: "item"
+				}
+				{
+					id: "462DFFD08706946C"
+					item: "gtceu:maintenance_hatch"
+					type: "item"
+				}
+				{
+					count: 36L
+					id: "7AF0D8979AAA3E87"
+					item: { Count: 36, id: "connectedglass:clear_glass" }
+					type: "item"
+				}
+				{
+					id: "2F13D4B6E5D2001B"
+					item: {
+						Count: 1
+						id: "gtceu:white_borderless_lamp"
+						tag: {
+							bloom: 1b
+							inverted: 1b
+							lit: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "0420408492871EB6"
+					item: { Count: 9, id: "minecraft:dirt" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "3680B1728BBB1AAC"
+					item: { Count: 3, id: "minecraft:oak_log" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "05EFB321EA4E3F21"
+					item: { Count: 5, id: "minecraft:oak_leaves" }
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["5F9183C9D58E52F2"]
+			id: "5022A21F3AA3256E"
+			tasks: [
+				{
+					id: "1D17BCD5395E3272"
+					item: "gtceu:silicon_dioxide_dust"
+					type: "item"
+				}
+				{
+					id: "4580CFD2F4FE52DF"
+					item: "gtceu:silicon_dust"
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5022A21F3AA3256E"]
+			id: "3FE5871FAD697512"
+			tasks: [{
+				id: "7B272D7266046002"
+				item: "gtceu:silicon_boule"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4A52195023EAAFBF"]
+			description: ["The Arc Furnace allows you to make wrought iron faster as well as other useful recipes."]
+			id: "0642C77B48C747E9"
+			tasks: [{
+				id: "527EB4D60DEAEB65"
+				item: "gtceu:lv_arc_furnace"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0642C77B48C747E9"]
+			id: "2B2F91A28D49DDE0"
+			tasks: [{
+				id: "264D47FC22CC11C8"
+				item: "minecraft:glass"
+				type: "item"
+			}]
+			title: "Better Glass"
+			x: -1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0642C77B48C747E9"]
+			description: ["Annealed copper unlocks better circuit component recipes."]
+			id: "1D3F0CF3519BF640"
+			tasks: [{
+				id: "3979ED6663C80DA8"
+				item: "gtceu:annealed_copper_ingot"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"5F9183C9D58E52F2"
+				"4E60C2E4797CB48C"
+			]
+			id: "7B7209FBDCE80D41"
+			tasks: [{
+				id: "4F7B9F874C84B815"
+				item: "integratedterminals:part_terminal_storage"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["34BBA3237C49BFCE"]
+			description: ["The LV extruder is useless for Gregtech progression. But if you want some better Tinker's Tools using Gregtech materials you will need this."]
+			id: "529F986B62EE40B2"
+			tasks: [{
+				id: "59063842BC39D234"
+				item: "gtceu:lv_extruder"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -5.5d
+		}
+	]
+	title: "LV Age"
+}

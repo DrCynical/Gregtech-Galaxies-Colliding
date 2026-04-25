@@ -1,0 +1,11 @@
+{
+    "texture": "tconstruct:metal",
+    "color": "0xFFFFFF",
+    "fallbacks": [
+        "metal"
+    ],
+    "generator": {
+        "type": "tconstruct:metal_texture",
+        "base": "avaritia:items/infinity_ingot"
+    }
+}

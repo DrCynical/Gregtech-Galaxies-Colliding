@@ -1,0 +1,54 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tips"
+	group: ""
+	id: "6C7723FF218D6673"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "41BA52E902F54F5F"
+			tasks: [{
+				id: "5F40CDC2889E8D6C"
+				title: "Tips"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["41BA52E902F54F5F"]
+			description: ["Superconductors negate any EU loss over distance. This means you can run a superconductor cable as far as you want and you won't lose any EU. They also allow better amperages compared to normal cables. (PS: There are only superconductor wires and not cables. You will not take any damage touching the wire since there is no EU loss.)"]
+			id: "2362662AB695FE15"
+			tasks: [{
+				id: "1D3ABC37EC97A3D0"
+				title: "Superconductors"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["41BA52E902F54F5F"]
+			description: [
+				"Gregtech Energy can be a bit challenging at first. Here are some tips to help."
+				""
+				"1. Each voltage Tier increases EU/t by 4x. Example: LV is 32 EU/t, while MV is 128 EU/t."
+				"2. Amperage correlates to how many machines can be powered. Example: If you have a 4A cable, that cable can supply whatever      voltage it is to 4 machines. "
+				"3. If you supply more voltage than a machine can handle, it WILL explode."
+				"4. Sending more amps into a cable than it can handle WILL burn the cable up. This can cause fires which WILL explode your machines."
+				"5. Cable loss is pretty simple, each cable or wire has a specific cable loss stated in its tooltip. Example: A Tin cable has 1 EU loss     per block. So if you are supplying 32 EU/t into that cable, if you try to connect a machine 8 blocks from the power source, you    will only get 24 EU/t."
+			]
+			id: "6A3BA963C48CB2F9"
+			tasks: [{
+				id: "4E362FD8806D7C3F"
+				title: "Energy Rules"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+	]
+	title: "Tips"
+}

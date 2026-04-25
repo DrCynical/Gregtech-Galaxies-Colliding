@@ -1,0 +1,28 @@
+{
+  "texture": null,
+  "fallbacks": [
+    "metal",
+    "default"
+  ],
+  "color": "0xFFE6F3FF",
+  "luminosity": 12,
+
+  "transformer": {
+    "type": "tconstruct:metal",
+    "brightness": 1.0,
+    "hueShift": 0.05,
+    "saturation": 0.15
+  },
+
+  "supported_stats": [
+    "head",
+    "handle",
+    "extra",
+    "large_plate",
+    "bow",
+    "bowstring",
+    "binding"
+  ],
+
+  "ignore_material_stats": false
+}
