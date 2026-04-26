@@ -23,6 +23,16 @@ ServerEvents.recipes(event => {
         1000,
         []
     )
+
+    //Sourcestone
+    event.remove({ output: 'ars_nouveau:sourcestone' })
+    event.recipes.gtceu.assembler('ars_nouveau:sourcestone')
+        .itemInputs('1x ars_nouveau:source_gem')
+        .itemInputs('8x minecraft:stone')
+        .itemOutputs('8x ars_nouveau:sourcestone')
+        .duration(120)
+        .EUt(20);
+
     
     //Fiber Recipes
     event.remove({ id: 'ars_nouveau:magebloom_fiber' })

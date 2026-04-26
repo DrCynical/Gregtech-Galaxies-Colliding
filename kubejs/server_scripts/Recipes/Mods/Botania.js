@@ -51,7 +51,19 @@ ServerEvents.recipes(event => {
         output: {
             item: "gtceu:manalium_ingot"
         },
-        mana: 2500
+        mana: 1000
+    })
+    //Infused Gold
+    event.custom({
+        type: "botania:mana_infusion",
+        input: {
+            type: "item",
+            item: "minecraft:gold_ingot"
+        },
+        output: {
+            item: "gtceu:infused_gold_ingot"
+        },
+        mana: 500
     })
 
     event.remove({output: "botania:terrasteel_ingot"})

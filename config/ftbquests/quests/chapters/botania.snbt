@@ -186,6 +186,20 @@
 			x: 12.0d
 			y: 0.0d
 		}
+		{
+			dependencies: [
+				"53BC446792DA6CD8"
+				"010FE1A51845C009"
+			]
+			id: "7851ED688F29DE75"
+			tasks: [{
+				id: "497A991C3D47FD05"
+				item: "gtceu:infused_gold_ingot"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -4.0d
+		}
 	]
 	title: "Botania"
 }

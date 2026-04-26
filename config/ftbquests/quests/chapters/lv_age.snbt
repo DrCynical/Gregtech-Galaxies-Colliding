@@ -831,12 +831,21 @@
 		}
 		{
 			dependencies: ["1832DE4E790AD692"]
+			description: ["The Aether portal looks a little different. You much use Ars Nouveau Alternating Sourestone instead of glowstone. You can craft that by making normal sourcestone and then using a stonecutter. After that just place it in the shape of a normal portal and use a water bucket to activate."]
 			id: "50FDB6DA7B654CEB"
-			tasks: [{
-				dimension: "aether:the_aether"
-				id: "1CD0AA82B80C2615"
-				type: "dimension"
-			}]
+			tasks: [
+				{
+					dimension: "aether:the_aether"
+					id: "1CD0AA82B80C2615"
+					type: "dimension"
+				}
+				{
+					count: 14L
+					id: "422AC0007C4101D0"
+					item: { Count: 14, id: "ars_nouveau:sourcestone_alternating" }
+					type: "item"
+				}
+			]
 			x: 6.0d
 			y: -3.0d
 		}

@@ -236,6 +236,7 @@
 				"2AD0A3FC10D71B59"
 				"67D4C8D2560689F9"
 			]
+			description: ["If you craft a bronze drum you can store more than a bucket at a time. Drums also act as buckets in crafting recipes allowing you to skip refilling regular buckets each craft. Useful for the firebricks craft."]
 			id: "3F0F922EFFF1839A"
 			rewards: [{
 				id: "5733010B194619DD"
@@ -1023,6 +1024,137 @@
 			]
 			x: 0.0d
 			y: 9.5d
+		}
+		{
+			dependencies: ["4CB8A698D1E03233"]
+			description: [
+				"You will need a constant supply of water to run your boilers. If you fail to supply water fast enough your boilers WILL EXPLODE."
+				"(PS: Fill a wooden or bronze drum will creosote oil and use the drum to craft treated planks.)"
+			]
+			icon: "gtceu:primitive_pump"
+			id: "2E40C96EB2BCA758"
+			tasks: [
+				{
+					id: "0346BC248CED03B8"
+					item: "gtceu:primitive_pump"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "59068DC6F304E27E"
+					item: { Count: 10, id: "gtceu:pump_deck" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "01465884C11DDDD9"
+					item: { Count: 10, id: "gtceu:treated_wood_frame" }
+					type: "item"
+				}
+				{
+					id: "45C09CA6453AC3C4"
+					item: "gtceu:pump_hatch"
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6AE3A411D1A98E56"]
+			description: ["The LV Prospector will let you find ore veins from the surface. It is a little expensive now but I recommend crafting one as soon as possible."]
+			id: "02871276B21EDD53"
+			tasks: [{
+				id: "2619ADB40F7127B3"
+				item: "gtceu:prospector.lv"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["327552AE2C6605BB"]
+			description: ["Once you have steel you can craft the Rustic Glider. This glider will aid your future exploration. (Can upgrade once you enter LV)"]
+			id: "58304C7525AA8170"
+			tasks: [{
+				id: "0EC292C6189433A8"
+				item: {
+					Count: 1
+					id: "rustic_engineer:rustic_glider_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["4CB8A698D1E03233"]
+			description: ["Pipes are a crucial part of Gregtech. You will need plenty of them for the steam age. Use a wrench to connect/disconnect pipes. If you crouch with a wrench in hand, you will see lines on the pipes. If you right click near the edge of the pipe it will shutter the pipe. Shuttering the pipe will force the fluid to only move in the direction of the arrow."]
+			id: "16B77F5BE8486038"
+			tasks: [{
+				id: "75DDB7FA7B5F0337"
+				item: "gtceu:bronze_small_fluid_pipe"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["141CC7C0E370B725"]
+			description: ["This jar lets you filter items to void upon pickup."]
+			id: "4D498CAADC6A582F"
+			tasks: [{
+				id: "5530709E13AC9493"
+				item: "ars_nouveau:void_jar"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3C65110A3EC4314F"]
+			description: ["This improved blast furnace will cut down the time required for steel significantly. You should make one of these as soon as you gain access to the LV Machine Casing. You will need a ton of steel heading into Low Voltage so I recommend keeping this running."]
+			id: "55B225ADFE0623E8"
+			tasks: [
+				{
+					id: "4AFAF2E0A881AC31"
+					item: "gtceu:improved_primitive_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 17L
+					id: "54C71499B3359A5E"
+					item: { Count: 17, id: "kubejs:high_steam_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "2258253341A13156"
+					item: { Count: 9, id: "gtceu:steel_firebox_casing" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "343BAC9E49010DCC"
+					item: { Count: 4, id: "gtceu:steel_machine_casing" }
+					type: "item"
+				}
+				{
+					id: "09FC6873E99D74E5"
+					item: "gtceu:ulv_input_bus"
+					type: "item"
+				}
+				{
+					id: "59E5F1403D5325CC"
+					item: "gtceu:ulv_output_bus"
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 13.0d
 		}
 	]
 	title: "Steam/ULV Age"
