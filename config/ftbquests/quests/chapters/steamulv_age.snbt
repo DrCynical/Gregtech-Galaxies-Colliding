@@ -191,19 +191,18 @@
 		}
 		{
 			dependencies: ["0C044EB5153447E9"]
+			description: ["Calcite can be found in Lapis Veins. Additionally you can macerate calcite blocks to get the dust."]
 			icon: "gtceu:raw_calcite"
 			id: "2AD0A3FC10D71B59"
 			tasks: [
 				{
-					count: 32L
 					id: "06F730F980B1631F"
-					item: { Count: 16, id: "gtceu:raw_calcite" }
+					item: "gtceu:raw_calcite"
 					type: "item"
 				}
 				{
-					count: 66L
 					id: "35FABC67F0A0EAC0"
-					item: { Count: 33, id: "gtceu:calcite_dust" }
+					item: "gtceu:calcite_dust"
 					type: "item"
 				}
 			]
@@ -212,19 +211,18 @@
 		}
 		{
 			dependencies: ["0C044EB5153447E9"]
+			description: ["Gypsum can be found in Basaltic Mineral Sand Veins. These veins are rich in iron."]
 			icon: "gtceu:raw_gypsum"
 			id: "67D4C8D2560689F9"
 			tasks: [
 				{
-					count: 18L
 					id: "04BC89AD4E4F4EA4"
-					item: { Count: 18, id: "gtceu:raw_gypsum" }
+					item: "gtceu:raw_gypsum"
 					type: "item"
 				}
 				{
-					count: 33L
 					id: "42F47857989DF48D"
-					item: { Count: 33, id: "gtceu:gypsum_dust" }
+					item: "gtceu:gypsum_dust"
 					type: "item"
 				}
 			]
@@ -236,7 +234,7 @@
 				"2AD0A3FC10D71B59"
 				"67D4C8D2560689F9"
 			]
-			description: ["If you craft a bronze drum you can store more than a bucket at a time. Drums also act as buckets in crafting recipes allowing you to skip refilling regular buckets each craft. Useful for the firebricks craft."]
+			description: ["Looking up the recipe is a bit buggy. If you search the uses for calcite dust you will see the crafting recipe for concrete buckets. If you craft a bronze drum you can store more than a bucket at a time. Drums also act as buckets in crafting recipes allowing you to skip refilling regular buckets each craft. Useful for the firebricks craft."]
 			id: "3F0F922EFFF1839A"
 			rewards: [{
 				id: "5733010B194619DD"

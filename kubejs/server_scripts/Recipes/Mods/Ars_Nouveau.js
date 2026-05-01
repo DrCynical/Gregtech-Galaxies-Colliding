@@ -61,7 +61,7 @@ ServerEvents.recipes(event => {
         {
             A: 'ars_nouveau:sourcestone',
             B: 'gtceu:infused_gold_plate',
-            C: '#gtceu:infused_gold_rod',
+            C: 'gtceu:infused_gold_rod',
             D: 'ars_nouveau:source_gem',
         }
     )

@@ -1,0 +1,42 @@
+GTCEuStartupEvents.registry('gtceu:material', event => {
+    event.create('uranium_236')
+        .ingot()
+        .color(0x11691f).iconSet(GTMaterialIconSet.DULL)
+        .element(GTElements.get('uranium_236'))
+        .flags(
+            GTMaterialFlags.FLAMMABLE
+        )
+    event.create('spent_uranium_235')
+        .ingot()
+        .color(0x0d4016).iconSet(GTMaterialIconSet.DULL)
+        .flags(
+            GTMaterialFlags.FLAMMABLE
+        )
+    event.create('spent_uranium')
+        .ingot()
+        .color(0x185422).iconSet(GTMaterialIconSet.DULL)
+        .flags(
+            GTMaterialFlags.FLAMMABLE
+        )
+    event.create('irradiated_thorium')
+        .ingot()
+        .color(0x434f45).iconSet(GTMaterialIconSet.DULL)
+        .flags(
+            GTMaterialFlags.FLAMMABLE
+        )
+    event.create('irradiated_uranium_236')
+        .ingot()
+        .color(0x3da64f).iconSet(GTMaterialIconSet.DULL)
+        .flags(
+            GTMaterialFlags.FLAMMABLE
+        )
+    event.create('depleted_plutonium_241')
+        .ingot()
+        .color(0x691928).iconSet(GTMaterialIconSet.DULL)
+        .flags(
+            GTMaterialFlags.FLAMMABLE
+        )     
+    event.create('warm_frost')
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .color(0x265680)
+})

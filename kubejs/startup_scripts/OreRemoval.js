@@ -19,6 +19,12 @@ WorldgenEvents.remove(event => {
       'malum:cthonic_gold_ore',
       'malum:brilliant_stone',
       'malum:brilliant_deepslate',
+      'gtceu:nickel_vein_ow',
+      'gtceu:galena_vein_ow',
+      'forestry:tin_ore',
+      'forestry:deepslate_tin_ore',
+      'forestry:apatite_ore',
+      'forestry:deepslate_apatite_ore'
     ]
   })
 
@@ -47,6 +53,12 @@ WorldgenEvents.remove(event => {
     'malum:cthonic_gold_ore',
     'malum:brilliant_stone',
     'malum:brilliant_deepslate',
+    'gtceu:nickel_vein_ow',
+    'gtceu:galena_vein_ow',
+    'forestry:tin_ore',
+    'forestry:deepslate_tin_ore',
+    'forestry:apatite_ore',
+    'forestry:deepslate_apatite_ore'
   ])
   event.removeFeatureById('underground_ores', [
     //FOR SOME REASON ADASTRA GENERATES ORES AT THIS GENERATION STEP      
@@ -75,5 +87,11 @@ WorldgenEvents.remove(event => {
     'malum:cthonic_gold_ore',
     'malum:brilliant_stone',
     'malum:brilliant_deepslate',
+    'gtceu:nickel_vein_ow',
+    'gtceu:galena_vein_ow',
+    'forestry:tin_ore',
+    'forestry:deepslate_tin_ore',
+    'forestry:apatite_ore',
+    'forestry:deepslate_apatite_ore'
   ])
 })

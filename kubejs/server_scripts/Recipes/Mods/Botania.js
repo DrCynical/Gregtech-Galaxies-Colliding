@@ -793,7 +793,7 @@ ServerEvents.recipes(event => {
         'HTF',
         ' T '
     ], {
-        M: 'gtceu:gt_manasteel_plate',
+        M: 'gtceu:manasteel_plate',
         I: 'botania:manasteel_ingot',
         T: 'botania:livingwood_twig',
         H: '#forge:tools/hammers',

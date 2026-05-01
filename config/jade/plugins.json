@@ -68,6 +68,9 @@
     "collector": true,
     "compressor": true
   },
+  "specialmobs": {
+    "display_ninja_disguises": true
+  },
   "gtceu": {
     "primitive_pump": true,
     "auto_output_info": true,

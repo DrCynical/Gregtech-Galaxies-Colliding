@@ -38,4 +38,8 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
         .protons(1)
         .neutrons(316)
         .symbol("Un")
+    event.create("uranium_236")
+        .protons(236)
+        .neutrons(316)
+        .symbol("U²³⁶")
 })

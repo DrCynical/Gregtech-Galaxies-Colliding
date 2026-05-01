@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
     ], {
         G: 'gtceu:wrought_iron_gear',
         C: 'gtceu:steam_machine_casing',
-        L: 'gtceu:hp_forge_hammer'
+        L: 'gtceu:hp_steam_forge_hammer'
     }).id('start:shaped/steam_squasher');
     event.shaped(Item.of('gtceu:steam_assembler'), [
         'CGC',
